@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<title>首页-EACH 定制家居</title>
+		<script type="text/javascript"> 
+			$(document).ready(function() { 
+				$('.nav li').hover(function() { 
+					$(this).find('.sub-menu').css('display', 'block'); 
+					}, function() { 
+						$(this).find('.sub-menu').css('display', 'none'); 
+				}); 
+			}); 
+		</script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="logo-box">
+					<a href="/">
+						<img src="img/logo.png" />
+					</a>
+				</div>
+				<div class="slogan">
+					<img src="img/slogan.png" />
+				</div>
+			</div>
+			<div class="banner">
+				<img src="img/home-center.png" />
+				<img src="img/desk01.jpg" />
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active">
+						<a href="/">
+							<i>首页</i>
+							<em>HOME PAGE</em>
+						</a>	
+					</li>
+					<li>
+						<a>
+							<i>关于我们</i>
+							<em>ABOUT US</em>
+						</a>
+						<ul class="sub-menu"> 
+							<li>
+								<a href="/about/brand">
+									<i>品牌文化</i>
+									<em>BRAND</em>
+								</a>
+							</li> 
+							<li>
+								<a href="/about/introduction">
+									<i>设计师</i>
+									<em>DESIGNER</em>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a>
+							<i>家具店</i>
+							<em>FURNITURE</em>
+						</a>
+						<ul class="sub-menu"> 
+							<li>
+								<a href="/furniture/styleShow">
+									<i>风格分类</i>
+									<em>STYLE</em>
+								</a>
+							</li> 
+							<li>
+								<a href="/furniture/styleType">
+									<i>空间分类</i>
+									<em>SPACE</em>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a>
+							<i>“焕”新家</i>
+							<em>NEW HOME</em>
+						</a>
+						<ul class="sub-menu" id="new-home"> 
+							<li>
+								<a href="/newHome/appoint">
+									<i>客户预约</i>
+									<em>ORDER</em>
+								</a>
+							</li> 
+							<li>
+								<a href="/newHome/enroll">
+									<i>活动报名</i>
+									<em>ENTRY</em>
+								</a>
+							</li>
+							<li>
+								<a href="/newHome/project">
+									<i>案例展示</i>
+									<em>CASE</em>
+								</a>
+							</li>
+							<li>
+								<a href="/newHome/video">
+									<i>活动视频</i>
+									<em>VIDEO</em>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/softStore">
+							<i>软配铺子</i>
+							<em>SOFT STORE</em>
+						</a>
+					</li>
+					
+					<li>
+						<a href="/feedback">
+							<i>客户反馈</i>
+							<em>FEEDBACK</em>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

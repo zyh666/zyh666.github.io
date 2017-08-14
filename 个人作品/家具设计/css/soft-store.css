@@ -1,0 +1,364 @@
+@font-face
+{
+	font-family: '张海山';
+	src: url('/static/css/index/方正兰亭纤黑简体.TTF');
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 625%;
+}
+body{
+	font-size: 0.16rem;
+}
+i,em{
+	font-style: normal;
+}
+img{
+	display: block;
+	margin: 0 auto;
+}
+.container-fluid,.container{
+	padding: 0;
+}
+.back{
+	background: #f8f9fb;
+}
+.header{
+	width: 1200px;
+	height: 0.86rem;
+	margin: 0 auto;
+}
+.classify{
+	width: 1200px;
+	height: 0.78rem;
+	margin: 0 auto;
+}
+.left-nav{
+	width: 20%;
+	float: left;
+}
+.left-nav ul{
+	height: 0.68rem;
+}
+.left-nav ul li{
+	width: 33%;
+	line-height: 0.68rem;
+	text-align: center;
+	list-style: none;
+	float: left;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #4b4b4b;
+	cursor: pointer;
+}
+.left-nav ul li span{
+	display: none;
+	background: url(/static/img/index/icon12.png) no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 0.05rem;
+}
+.left-nav .active span{
+	display: block;
+}
+.left-nav ul li:hover{
+	cursor: pointer;      
+}
+.left-nav ul li:hover span{
+	display: block;    
+}
+.right-nav{
+	width: 80%;
+	float: right;
+}
+.right-nav span{
+	display: block;
+	float: left;
+	background: url(/static/img/index/icon2.png) no-repeat;
+	background-position: 0 20px;
+	width: 1%;
+	height: 0.68rem;
+	margin-left: 3%;
+}
+.right-nav ul{
+	margin-left: 5%;
+	height: 0.68rem;
+}
+.right-nav ul li{
+	width: 10%;
+	line-height: 0.68rem;
+	text-align: center;
+	list-style: none;
+	float: left;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #4b4b4b;
+	cursor: pointer;
+}
+.right-nav ul li span{
+	display: none;
+	background: url(/static/img/index/icon12.png) no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 0.05rem;
+}
+.right-nav .active span{
+	display: block;
+}
+.right-nav ul li:hover{
+	cursor: pointer;
+        
+}
+.right-nav ul li:hover span{
+	display: block;    
+}
+.content{
+	width: 62.5%;
+	margin: 0.7rem auto;
+}
+.content .row{
+	margin-top: 0.3rem;
+}
+.content span{
+	display: block;
+	background: url(/static/img/index/icon3.png) no-repeat;
+	width: 100%;
+	height: 0.1rem;
+	margin-top: 1rem;
+}
+.content img{
+	width: 56.7%;
+	height: 2.3rem;
+	display: block;
+	margin: 0 auto;
+}
+.content h4{
+	margin-left: 43%;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #8c8d8b;
+}
+.style-content{
+	width: 62.5%;
+	margin: 0.7rem auto;
+}
+.style-content .row{
+	margin-top: 0.3rem;
+}
+.style-content span{
+	display: block;
+	background: url(/static/img/index/icon3.png) no-repeat;
+	width: 100%;
+	height: 0.1rem;
+	margin-top: 1rem;
+}
+.style-content img{
+	width: 92.1%;
+	height: 2.2rem;
+	display: block;
+	margin: 0 auto;
+}
+.style-content h4{
+	margin-left: 40%;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #8c8d8b;
+}
+.high{
+	height: 3rem;
+}
+.navi{
+	width: 62.5%;
+    margin: 0.5rem auto;
+    font-family: arial;
+	font-size: 0.14rem;
+	color: #8c8d8b;
+}
+.navi >span{
+	width: 0.24rem;
+	line-height: 0.24rem;
+	display: inline-block;
+	background: #363636;
+	font-family: arial;
+	font-size: 0.14rem;
+	color: #8c8d8b;
+	text-align: center;
+	margin-left: 0.2rem;
+}
+.navi >a{
+	line-height: 0.24rem;
+	display: inline-block;
+	margin-left: 0.2rem;
+	font-family: arial;
+	font-size: 0.14rem;
+	color: #8c8d8b;
+}
+.navi >a:last-child{
+	margin-right: 0.2rem;
+}
+.col-xs-12,.col-sm-12,.col-md-4,.col-lg-4,.col-xl-4{
+	padding: 0;
+}
+.ba-color{
+	width: 100%;
+	height: 1.78rem;
+	background: #fff;
+}
+.footer{
+	width: 1200px;
+	margin: 0 auto;
+}
+.footer .row{
+	margin: 0;
+}
+.footer-left{
+	margin-top: 0.44rem;
+}
+.footer-left ul{
+	display: inline-block;
+	margin-left: 0.5rem;
+	margin-bottom: 0;
+	margin-top: 0.12rem;
+}
+.footer-left ul li:first-child{
+	width: 0.8rem;
+}
+.footer-left ul li:last-child{
+	width: 0.8rem;
+}
+.footer-left ul li{
+	width: 0.2rem;
+	text-align: center;
+	float: left;
+	list-style: none;
+}
+.footer-left ul li a{
+	font-family: "张海山";
+	font-size: 0.19rem;
+	color: #4C4C4C;
+	text-decoration: none;
+	cursor: pointer;
+}
+.footer-left img{
+	width: 1.6rem;
+	float: left;
+}
+.footer-left p{
+	margin-top: 0.34rem;
+	font-family: "张海山";
+	font-size: 0.18rem;
+	color: #4C4C4C;
+}
+.footer-right{
+	margin-top: 0.56rem;
+}
+.footer-right p{
+	font-family: "张海山";
+	font-size: 0.18rem;
+	color: #4C4C4C;
+}
+.footer-right span{
+	font-family: "张海山";
+	font-size: 0.2rem;
+	color: #363636;
+}
+.navbar{
+	margin-bottom: 0;
+	border: none;
+}
+.navbar-header{
+	margin-top: 6px;
+}
+.navbar-brand{
+	height: 0.8rem;
+}
+.nav{
+	margin-left: 0.42rem;
+}
+.nav >li{
+	width: 1.3rem;
+	background: url(/static/img/index/icon.png) no-repeat;
+	background-position: 0 0.2rem;
+}
+.nav .active >a{
+	background: #f8f9fb;
+}
+.nav > li > a{
+	display: block;
+	width: 0.96rem;
+	height: 0.86rem;
+	line-height:0.6rem;
+	padding: 0;
+}
+.nav > li > a:hover,.nav > li > a:focus{
+	background: #f8f9fb;
+	transition: background-color 0.5s ease-in-out;
+}
+.nav > li > a > i{ 
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #4c4c4c;
+	position: relative;
+	left: 0.12rem;
+}
+.nav > li > a > em{
+	font-family: arial;
+	font-size: 0.11rem;
+	color: #a19f9f;
+	position: absolute;
+	top: 0.26rem;
+	left: 0.12rem;
+	display: block;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+	background-color:#f8f9fb;
+	border-color: #f8f9fb;
+}
+.carousel-control{
+	width: 8%;
+	top: 50%;
+}
+.carousel-control.left,.carousel-control.right{
+	background-image: none;
+}
+.dropdown-menu{
+	min-width: 0.96rem;
+	border: none;
+	border-radius: 0;
+}
+.dropdown-menu li{
+	width: 96px;
+	height: 60px;
+	list-style: none;
+}
+.dropdown-menu li a{
+	width: 0.96rem;
+	height: 0.6rem;
+	display: block;
+	padding-left: 0.12rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+.dropdown-menu li a i{ 
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #4c4c4c;
+}
+.dropdown-menu li a em{
+	font-family: "Arial";
+	font-size: 0.11rem;
+	color: #a19f9f;
+	position: relative;
+	top: 0.03rem;
+	display: block;
+}
+.dropdown-menu li:hover a{
+	background: #f8f9fb;
+	transition: background-color 0.5s ease-in-out;
+}
+.dropdown-menu .active a{
+	background: #f8f9fb;
+}

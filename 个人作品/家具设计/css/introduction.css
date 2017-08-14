@@ -1,0 +1,237 @@
+.photo-content{
+	width: 1200px;
+	margin: 0 auto;
+}
+.intro-ba{
+	background: url(/static/img/index/intro-ba.jpg) no-repeat;
+}
+.photo{
+	width: 2.4rem;
+	height: 3rem;
+	background: #fff;
+	margin-top: 2.5rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+	margin-left: 1.5rem;
+	margin-bottom: 1.55rem;
+}
+.photo img{
+	width: 2rem;
+	height: 2.7rem;
+	position: relative;
+	top: 0.15rem;
+	max-width: 100%;
+}
+.introduction{
+	margin-top: 2.1rem;
+	margin-left: 0.28rem;
+}
+.title{
+	width: 2.16rem;
+	height: 0.74rem;
+	background: url(/static/img/index/title-ba.png) no-repeat;
+}
+.title h3{
+	position: relative;
+	top: 0.25rem;
+	text-align: center;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #585858;
+}
+.introduction h4{
+	font-family: "张海山";
+	font-size: 0.3rem;
+	color: #3c3c3c;
+	margin-top: 0.27rem;
+}
+.introduction span{
+	background: url(/static/img/index/icon4.png) no-repeat;
+	display: block;
+	width: 0.5rem;
+	height: 0.1rem;
+	margin-top: 0.45rem;
+}
+.introduction p{
+	font-family: "张海山";
+	font-size: 0.14rem;
+	color: #5c5d5b;
+	margin-top: 0.35rem;
+}
+.each-ba{
+	background: url(/static/img/index/each-ba.jpg) no-repeat;
+}
+.each-main{
+	margin-bottom: 1.2rem;
+}
+.each-main h2{
+	margin-top: 1.7rem;
+	margin-left: 0.76rem;
+	font-family: "张海山";
+	font-size: 0.4rem;
+	color: #5c5d5b;
+}
+.each-main img{
+	width: 91.2%;
+	margin-top: 0.18rem;
+	margin-left: 0.78rem;
+}
+.each-main p{
+	width: 86.2%;
+	margin: 0.54rem auto;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #5c5d5b;
+}
+.each-main h2 span{
+	background: url(/static/img/index/icon5.png) no-repeat;
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.24rem;
+}
+.each-main p span{
+	background: url(/static/img/index/icon6.png) no-repeat;
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.12rem;
+}
+.case-content{
+	width: 63.5%;
+	margin: 0.4rem auto;
+}
+.case-content >span{
+	display: block;
+	background: url(/static/img/index/icon3.png) no-repeat;
+	width: 100%;
+	height: 0.1rem;
+	margin-top: 1rem;
+}
+.box{
+	width: 93.8%;
+	height: 4.26rem;
+	margin: 20px auto;
+	overflow: hidden;
+	position: relative;
+}
+.box img{
+	width: 5.8rem;
+	height: 4.26rem;
+}
+.box .dask {
+	width: 100%;
+	height: 4.26rem;
+	background: #000;
+	opacity: 0.5;
+	position: absolute;
+	top: -4.26rem;
+	left: auto;
+}
+.dask h5{
+	font-family: "张海山";
+	font-size: 0.3rem;
+	color: #fff;
+	position: relative;
+	top: 1.34rem;
+	text-align: center;
+}
+.dask h5 span{
+	font-size: 0.14rem;
+}
+.dask >span{
+	display: block;
+	background: url(/static/img/index/icon7.png) no-repeat;
+	width: 56.6%;
+	height: 0.1rem;
+	position: relative;
+	top: 1.44rem;
+	left: 21.7%;
+}
+.dask p{
+	width: 56.6%;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #fff;
+	position: relative;
+	top: 1.58rem;
+	left: 21.7%;
+}
+.banner-box{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner-box .banner-dask {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	position: absolute;
+	top: -6rem;
+	left: auto;
+}
+.banner-dask h6{
+	font-family: "张海山";
+	font-size: 0.3rem;
+	color: #fff;
+	position: relative;
+	top: 1.34rem;
+	text-align: center;
+}
+.banner-dask >span{
+	display: block;
+	background: url(/static/img/index/icon8.png) no-repeat;
+	width: 40.6%;
+	height: 0.1rem;
+	position: relative;
+	top: 1.44rem;
+	left: 29.7%;
+}
+.banner-dask p{
+	width: 40.6%;
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #fff;
+	position: relative;
+	top: 1.58rem;
+	left: 29.7%;
+}
+.video-content{
+	width: 1200px;
+	margin: 0.6rem auto;
+}
+.video{
+	width: 100%;
+	margin-top: 0.4rem;
+}
+.video-title{
+	width: 97%;
+	height: 0.5rem;
+	margin: 0.2rem auto;
+}
+.video-title h4{
+	float: left;
+	font-family: arial;
+	font-size: 0.24rem;
+	color: #999797;
+	margin-top: 0.2rem;
+}
+.video-title h2{
+	float: right;
+	font-family: "张海山";
+	font-size: 0.3rem;
+	color: #363636;
+	margin-top: 0.1rem;
+}
+.video video{
+	width: 12rem;
+	height: 6.36rem;
+	display: block;
+	margin: 0 auto;
+}
+.video-title h2 span{
+	display: inline-block;
+	background: url(/static/img/index/icon9.png) no-repeat;
+	width: 0.3rem;
+	height: 0.1rem;
+	margin-left: 0.2rem;
+}

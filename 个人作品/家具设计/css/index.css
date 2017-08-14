@@ -1,0 +1,147 @@
+@font-face
+{
+	font-family: '张海山';
+	src: url('/static/css/index/方正兰亭纤黑简体.TTF');
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-size: 0.16rem;
+}
+i,em{
+	font-style: normal;
+}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	width: 100%;
+	height: 2rem;	
+}
+.logo-box{
+	width: 30%;
+	float: left;
+	margin-top: 38px;
+}
+.logo-box a{
+	width: 194px;
+	height: 55px;
+	display: block;
+}
+.slogan{
+	width: 70%;
+	float: right;
+	margin-top: 38px;
+}
+.slogan img{
+	display: block;
+	float: right;
+}
+.banner{
+	width: 100%;
+	position: relative;
+	top: -80px;
+}
+.banner img:last-child{
+	width: 6.9rem;
+	height: 4.84rem;
+	display: block;
+	position: absolute;
+	top: 2rem;
+	z-index: -1;
+	left: 5rem;
+}
+.nav{
+	width: 60%;
+	height: 50px;
+	position: absolute;
+	top: 8.5rem;
+}
+.nav >ul{
+	width: 768px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+}
+.nav >ul >li{
+	width: 128px;
+	height: 50px;
+	float: left;
+	list-style: none;
+	background: url(../img/icon.png) no-repeat;
+}
+.nav >ul >li >a{
+	width: 0.86rem;
+	height: 0.44rem;
+	display: block;
+	padding-left: 0.12rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+.nav >ul >li >a i{ 
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #4c4c4c;
+}
+.nav >ul >li >a em{
+	font-family: "Arial";
+	font-size: 0.11rem;
+	color: #a19f9f;
+	position: relative;
+	top: 0.03rem;
+	display: block;
+}
+.nav >ul >li:hover >a{
+	background: #f8f9fb;
+	transition: background-color 0.5s ease-in-out;
+}
+.nav .active >a{
+	background: #f8f9fb;
+}
+.sub-menu{
+	position: absolute;
+	top: -94px;
+	display: none;
+}
+.sub-menu li{
+	width: 128px;
+	height: 50px;
+	list-style: none;
+}
+.sub-menu li a{
+	width: 0.86rem;
+	height: 0.44rem;
+	display: block;
+	padding-left: 0.12rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+.sub-menu li a i{ 
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #4c4c4c;
+}
+.sub-menu li a em{
+	font-family: "Arial";
+	font-size: 0.11rem;
+	color: #a19f9f;
+	position: relative;
+	top: 0.03rem;
+	display: block;
+}
+.sub-menu li:hover a{
+	background: #f8f9fb;
+	transition: background-color 0.5s ease-in-out;
+}
+.sub-menu .active a{
+	background: #f8f9fb;
+}
+#new-home{
+	top: -194px;
+}
