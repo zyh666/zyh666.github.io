@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			.cont{
+				position: relative;
+				margin: 100px;
+				width: 400px;
+			}
+			img{
+				width: 400px;
+				height: 300px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.box{
+				-webkit-transform-style: preserve-3d;
+				-webkit-perspective: 800px;
+			}
+			button{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				border: none;
+				position: absolute;
+			}
+			#btn1{
+				top: 100px;
+				left: -60px;
+			}
+			#btn2{
+				top: 100px;
+				right:-60px;
+			}
+			img{
+				-webkit-transform-origin: bottom;
+				-webkit-transform: rotateX(180deg);
+				opacity: 0;
+			}
+			img.turndown{
+				-webkit-animation: turndown 2s forwards;
+				-webkit-transform-origin: bottom;
+			}
+			img.turnup{
+				-webkit-animation: turnup 2s forwards;
+				-webkit-transform-origin: bottom; 
+			}
+			@-webkit-keyframes turndown{
+				from{
+					-webkit-transform: rotateX(0deg);
+					opacity: 1;
+				}
+				to{
+					-webkit-transform: rotateX(-180deg);
+					opacity: 0;
+				}
+			}
+			@-webkit-keyframes turnup{
+				0%{
+					-webkit-transform: rotateX(-180deg);
+					opacity: 0;
+				}
+				50%{
+					-webkit-transform: rotateX(-380deg);
+				}
+				60%{
+					-webkit-transform: rotateX(-340deg);
+				}
+				70%{
+					-webkit-transform: rotateX(-370deg);
+				}
+				80%{
+					-webkit-transform: rotateX(-350deg);
+				}
+				90%{
+					-webkit-transform: rotateX(-365deg);
+				}
+				100%{
+					-webkit-transform: rotateX(-360deg);
+					opacity: 1;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<div class="box">
+				<img src="img/dongwu/dongwu1.jpg"/ class="turnup">
+				<img src="img/dongwu/dongwu2.jpg"/>
+				<img src="img/dongwu/dongwu3.jpg"/>
+			</div>
+			<button id="btn1">后</button>
+			<button id="btn2">前</button>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var aImg=document.getElementsByTagName('img');
+		var num=0;
+		$('btn2').onclick=function(){
+			for(var i=0;i<aImg.length;i++){
+				aImg[i].className='';
+			}
+			aImg[num].className='turndown';
+			if(num<aImg.length-1){
+				num++;
+			}else{
+				num=0;
+			}
+			aImg[num].className='turnup';
+		}
+	</script>
+</html>

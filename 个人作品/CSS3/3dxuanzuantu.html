@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			#cont{
+				width: 600px;
+				height: 200px;
+				border: 1px solid red;
+				margin: 100px;
+				-webkit-transform-style: preserve-3d;
+				-webkit-perspective: 0px;
+				transition: all 2s; 
+				-webkit-transform-origin: center center -100px;  
+			}
+			button{
+				margin-left: 100px;
+			}
+			ul{
+				width: 60px;
+				height: 100%;
+				position: relative;
+				float: left;
+				-webkit-transform-style: preserve-3d;
+				-webkit-perspective: 0px;
+				-webkit-transform-origin: center center -100px; 
+				-webkit-transition: all 2s;
+			}
+			li{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				
+			}
+			li:nth-child(1){
+				background: red;
+				-webkit-transform: translateY(-200px) rotateX(90deg);
+				-webkit-transform-origin: bottom;
+				background-image: url(img/dongwu/dongwu1.jpg);
+				background-size: 600px 200px;
+			}
+			li:nth-child(2){
+				background: gray;
+				-webkit-transform: translateY(200px) rotateX(-90deg);
+				-webkit-transform-origin: top;
+				background-image: url(img/dongwu/dongwu2.jpg);
+				background-size: 600px 200px;
+				
+			}
+			li:nth-child(3){
+				-webkit-transform:translateZ(-200px) rotateX(180deg);
+				background: blueviolet;
+				background-image: url(img/dongwu/dongwu3.jpg);
+				background-size: 600px 200px;
+			}
+			li:nth-child(4){
+				background: palegreen;
+				background-image: url(img/dongwu/dongwu4.jpg);
+				background-size: 600px 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="cont">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<button id="btn">下一页</button>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var str='';
+		var aUl=document.getElementsByTagName('ul');
+		for(var i=0;i<10;i++){
+			str+='<ul>'+
+				'<li style="background-position:'+(-i*60)+'px 0px;"></li>'+
+				'<li style="background-position:'+(-i*60)+'px 0px;"></li>'+
+				'<li style="background-position:'+(-i*60)+'px 0px;"></li>'+
+				'<li style="background-position:'+(-i*60)+'px 0px;"></li>'+
+			'</ul>';
+		}
+			$('cont').innerHTML=str;
+		var n=0;
+		$('btn').onclick=function(){
+		var num=0;
+			n++;
+			var timer = setInterval(function(){
+				if(num<aUl.length){
+					aUl[num].style.webkitTransform='rotateX(-'+90*n+'deg)';
+					num++;
+					}else{
+						clearInterval(timer);
+				}
+			},80)
+		}
+	</script>
+</html>

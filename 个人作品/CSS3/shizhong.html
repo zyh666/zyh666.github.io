@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+		.cont{
+			width: 450px;
+			height: 450px;
+			border-radius: 50%;
+			background: black;
+			margin: 50px;
+			position: relative;
+			padding: 10px;
+		}
+		#list li{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: white;
+			float: left;
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			margin-top: 10px;
+			margin-left: -5px;
+			-webkit-transform-origin: center 225px;
+		}
+		#list li:nth-child(5n+1){
+			height: 30px;
+			border-radius: 10px;
+		}
+		.yuan{
+			width: 50px;
+			height: 50px;
+			background: palevioletred;
+			border-radius:50%;
+			position: absolute;
+			top: 50%;
+			margin-top: -25px;
+			left: 50%;
+			margin-left: -25px;
+		}
+		.second{
+			width: 10px;
+			height: 290px;
+			border-radius: 10px;
+			background: palevioletred;
+			position: absolute;
+			top: 20px;
+			left: 230px;
+			-webkit-transform-origin: 5px 215px;
+		}
+		.hour{
+			width: 100px;
+			height: 20px;
+			border-radius: 10px;
+			background: white;
+			position: absolute;
+			left: 235px;
+			top: 225px;
+			-webkit-transform-origin: 0px 10px;
+		}
+		/*.cont:hover .hour{
+			-webkit-transform: rotate(45deg);
+		}*/
+		.hour .s1{
+			width: 0;
+			height: 0;
+			border: 10px solid white;
+			position: absolute;
+			top: 0px;
+			left: 80px;
+			-webkit-transform: rotate(45deg);
+		}
+		.minute{
+			width: 170px;
+			height: 14px;
+			border-radius: 10px;
+			background: powderblue;
+			position: absolute;
+			left: 235px;
+			top: 230px;
+			/*-webkit-transform: rotate(45deg);*/
+			-webkit-transform-origin: 0px 7px;
+		}
+		.minute .s2{
+			width: 0;
+			height: 0;
+			border: 8px solid powderblue;
+			position: absolute;
+			top: -1px;
+			left: 160px;
+			-webkit-transform: rotate(45deg);
+		}	
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<ul id="list"></ul>
+			<div class="hour" id="hour">
+				<span class="s1"></span>
+			</div>
+			<div class="minute" id="minute">
+				<span class="s2"></span>
+			</div>
+			<div class="yuan"></div>
+			<div class="second" id="second"></div>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var aLi=document.getElementsByTagName('li');
+		var oList=document.getElementById('list');
+		var str='';
+		for(var i=0;i<60;i++){
+			str+='<li style="-webkit-transform: rotate('+6*i+'deg);"></li>'
+		}
+		oList.innerHTML=str;
+		setInterval(function(){
+			var nowDate=new Date();
+			var oHour=nowDate.getHours();
+			var oMinute=nowDate.getMinutes();
+			var oSecond=nowDate.getSeconds();
+			$('second').style.webkitTransform='rotate('+(oSecond*6)+'deg)';
+			$('minute').style.webkitTransform='rotate('+(oMinute*6+oSecond*0.1-90)+'deg)';
+			$('hour').style.webkitTransform='rotate('+(oHour%12*30+oMinute*0.5+oSecond*1/120-90)+'deg)';
+		},1000)
+	</script>
+</html>
