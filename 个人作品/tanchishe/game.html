@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			.cont{
+				width: 300px;
+				height: 600px;
+				border: 1px solid red;
+				margin: 20px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.square,.squareBlack{
+				width: 75px;
+				height: 100px;
+				float: left;
+				border: 1px solid black;
+				box-sizing:border-box;
+			}
+			.squareBlack{
+				background: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<ul>
+				<li>
+					<div class="square"></div>
+					<div class="squareBlack"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+	<script type="text/javascript">
+//		1,在cont里面自动生成Li,在Li里面生成4个div;
+//		2,给Li加定时器,让自动li往下移动;
+//		3,每次当li的高度生成完过后,生成第二个Li;
+//		4,同时在li里面随机生成一个黑方块;
+//		5,点击判断:当点击到白方块的时候,则游戏结束,弹框提示,定时器结束;
+//		6,若一直未点击,当li到达cont的底部的时候,则游戏同样结束;
+		
+	</script>
+</html>

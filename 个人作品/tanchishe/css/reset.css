@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	/*/*font-weight: bold;*(加粗)*/
+	font-weight: normal;
+	/*(正常)*/
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+	margin: 0;
+}
+
+ul,
+ol {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	/*(前面的有点)*/
+}
+
+em {
+	/*/*font-style: italic;*(斜体)*/
+	font-style: normal;
+	/*(正常)*/
+}
+
+a {
+	text-decoration: none;
+	/*(下划线)*/
+	color: #000;
+	/*(字体黑色)*/
+}
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+}
