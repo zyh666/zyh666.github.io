@@ -1,0 +1,9 @@
+.enroll-right label:first-child input{
+	margin-top: 0;
+}
+.enroll-right button{
+	margin-top: 0.66rem;
+}
+.enroll-right span{
+	margin-top: 0.66rem;
+}

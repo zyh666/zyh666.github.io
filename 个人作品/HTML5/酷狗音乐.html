@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="font1/iconfont.css"/>
+		<style type="text/css">
+			.cont{
+				width: 1000px;
+				height: 690px;
+				background: url(img/kugou/1.jpg) no-repeat center center;
+				background-size: 100% 100%;
+				font-family: "微软雅黑";
+				overflow: hidden;
+			}
+			.cont .top{
+				width: 100%;
+				height: 50px;
+				/*background: black;*/
+				color: white;
+			}
+			img{
+				float: left;
+				margin-left: 15px;
+			}
+			.t-l{
+				width: 310px;
+				height: 100%;
+				float: left;
+			}
+			.t-l span{
+				color: white;
+				padding:0 5px 0;
+			}
+			.t-l .text{
+				line-height: 50px;
+				font-size: 14px;
+			}
+			.t-c{
+				line-height: 50px;
+			}
+			.t-c img{
+				margin-top: 5px;
+				color: white;
+				margin-left: 0px;
+			}
+			.t-c .input{
+				width: 265px;
+				height: 25px;
+				position: relative;
+				float: left;
+				margin-top: -4px;
+			}
+			.t-c .input img{
+				position: absolute;
+				top: 10px;
+				right: 5px;
+			}
+			.t-c input{
+				border-radius: 30px;
+				padding-left: 10px;
+				height: 25px;
+				width: 265px;
+				background: #CFCECE;
+				border:none;
+			}
+			.content{
+				height: 576px;
+				width: 1000px;
+			}
+			.content .c-l{
+				float: left;
+				height: 100%;
+				width: 500px;
+				position: relative;
+				overflow: hidden;
+			}
+			.content .c-l .bar{
+				position: absolute;
+				top: -25px;
+				left: 20%;
+				-webkit-transform-origin: center top;
+				-webkit-transform: rotate(-45deg);
+				transition: all 1s;
+				z-index: 1;
+			}
+			.content .c-l .bar.active{
+				-webkit-transform: rotate(0);
+			}
+			.circle{
+				width: 	390px;
+				height: 360px;
+				position: relative;
+			}
+			.circle.active{
+				-webkit-animation:move 1s infinite linear;
+				-webkit-transform-origin: center center;
+			}
+			@-webkit-keyframes move{
+				from{
+					-webkit-transform: rotate(0);
+				}
+				to{
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			.content .c-l .circle{
+				margin-top: 110px;
+			}
+			.cp{
+				position: absolute;
+				width: 238px;
+				height: 238px;
+				background: url(img/player/cp.jpg) no-repeat center center;
+				background-size: 100% 100%;
+				border-radius: 50%;
+				top: 60px;
+				left: 76px;
+				
+			}
+			.content .c-r{
+				width: 500px;
+				height: 100%;
+				float: left;
+			}
+			.content h3{
+				margin: 20px;
+			}
+			.content .info{
+				margin-left: 20px;
+			}
+			.foot{
+				height: 50px;
+				border-top:1px solid #d8d8d8 ;
+				background: #F6F6F8;
+			}
+			.bottom{
+				width: 100%;
+				height: 66px;
+				/*background: black;*/
+			}
+			.broadcast{
+				width: 200px;
+				float: left;
+				line-height: 66px;
+			}
+			.broadcast .iconfont{
+				color: white;
+				font-size: 38px;
+				margin-left: 15px;
+			}
+			.b-center{
+				width: 375px;
+				height: 100%;
+				float: left;
+				position: relative;
+			}
+			.b-center h4{
+				color: white;
+				width: 25px;
+				border-radius: 10px;
+				padding: 2px 10px 1px;
+				font-size: 12px;
+				border: 1px solid white;
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+			.b-center .time{
+				position: absolute;
+				color: white;
+				top: 10px;
+				right: 0;
+				font-size: 12px;
+			}
+			.paly-bar{
+				width: 375px;
+				height: 3px;
+				background: gainsboro;
+				margin-top: 13px;
+			}
+			
+			.progress{
+				height: 3px;
+				width: 0;
+				position: relative;
+				background: red;
+			}
+			.progress .dot{
+				border-radius: 50%;
+				width: 10px;
+				height: 10px;
+				background: red;
+				position: absolute;
+				top: -3px;
+				right: -10px;
+			}
+			
+			.right{
+				height: 100%;
+				float: left;
+				color: white;
+				line-height: 66px;
+				margin-left: 14px;
+			}
+			.right .iconfont{
+				margin-left: 15px;
+				font-size: 20px;
+				
+			}
+			.right span{
+				border: 1px solid white;
+				border-radius: 10px;
+				padding: 1px 10px 1px;
+				font-size: 12px;
+				margin:0 15px 0;
+			}
+			.vo{
+				position: relative;
+			}
+			.vo .volume{
+				position: absolute;
+				height: 100px;
+				width: 30px;
+				background: black;
+				top: -130px;
+				left: -5px;
+				display: none;
+			}
+			.vo .volume img{
+				position: absolute;
+				bottom: -8px;
+				left: -5px;
+			}
+			.vo .volume .down{
+				height: 82px;
+				width: 4px;
+				background: gainsboro;
+				margin-left: 15px;
+				margin-top: 10px;
+			}
+			.vo .volume .top{
+				position: absolute;
+				bottom: 0;
+				left: 15;
+				height: 10px;
+				width: 4px;
+				background: red;
+			}
+			.volume .top .yuan{
+				position: absolute;
+				height: 10px;
+				width: 10px;
+				border-radius: 50%;
+				background: red;
+				left: -3px;
+				top: 0;
+			}
+			.fw{
+				position: absolute;
+				height: 150px;
+				width: 30px;
+				top: -130px;
+				left: -5px;
+				
+			}
+			.lrc{
+				height: 400px;
+				/*border: 1px solid red;*/
+				margin-top: 20px;
+				overflow: hidden;
+			}
+			.lrc ul{
+				overflow: hidden;
+				margin-top: 100px;
+			}
+			.lrc li{
+				line-height: 30px;
+				margin-left: 20px;
+			}
+			.lrc li.active{
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<div class="top">
+				<div class="t-l">
+					<img src="img/kugou/logo.png"/>
+					<div class="text"><span>登录</span>|<span>注册</span></div>
+				</div>
+				<div class="t-c">
+					<img src="img/kugou/2.png"/>
+					<div class="input">
+						<input type="text" name="" id="" value="" />
+						<img src="img/kugou/3.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="c-l">
+					<img class="bar" src="img/player/play_needle.png"/>
+					<div class="circle">
+						<img src="img/player/play_disc.png"/>
+						<div class="cp"></div>
+					</div>
+				</div>
+				<div class="c-r">
+					<h3>只愿一生跟你走</h3>
+					<div class="info">
+						专辑：<span>4In1珍藏集</span>
+						歌手：<span>张学友</span>
+						来源：<span>4In1珍藏集</span>
+					</div>
+					<div class="lrc">
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="broadcast">
+					<i class="iconfont">&#xe6de;</i>
+					<i class="iconfont">&#xe60c;</i>
+					<audio id="mymusic" src="zhiyuanyishenggennizou.mp3"></audio>
+					<i class="iconfont">&#xe6dd;</i>
+				</div>
+				<div class="b-center">
+					<h4>标准</h4>
+					<div class="time">
+						<span>00:00</span>/
+						<span>05:14</span>
+					</div>
+					<div class="paly-bar">
+						<div class="progress">
+							<span class="dot"></span>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<i class="iconfont">&#xe97e;</i>
+					<i class="iconfont">&#xe635;</i>
+					<i class="iconfont">&#xe613;</i>
+					<i class="iconfont">&#xe683;</i>
+					<i class="iconfont vo">
+						&#xe6d2;
+						<div class="volume">
+							<img src="img/kugou/sanjiao.png"/>
+							<div class="down">
+								<div class="top">
+									<div class="yuan"></div>
+								</div>
+							</div>
+						</div>
+						<div class="fw"></div>
+					</i>
+					<span>音效</span>
+					<b>词</b>
+					<i class="iconfont">&#xe65a;</i>
+					<i class="iconfont">&#xe503;</i>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+	<script src="js/gequ.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('.vo').mousemove(function(){
+			$('.volume').show();
+		})
+		$('.fw').mouseout(function(){
+			$('.volume').hide();
+		})
+		var w=$('.paly-bar').width();
+		$('.dot').mousedown(function(ev){
+			var rw=$('.progress').width();
+			var cx=ev.clientX;
+			$(document).mousemove(function(ev){
+				var addW=ev.clientX-cx;
+				var newW=addW+rw;
+				if(newW<=0){
+					newW=0;
+				}if(newW>=w){
+					newW=w;
+				}
+				$('.progress').css('width',newW+'px');
+				var currentT=(newW/w)*ov.duration;
+				$('.time span').eq(0).html(changeTime(currentT));
+				ov.currentTime=currentT;
+				$('.lrc li').each(function(i,elem){
+						if($(elem).attr('time')==changeTime(currentT)){
+							$('.lrc ul li').removeClass('active');
+							var _index=$(elem).index();
+							$('.lrc ul li').eq(_index).addClass('active');
+							$('.lrc ul').animate({'margin-top':100-(_index*30)+'px'},500)
+						}
+					})
+			})
+				
+			$(document).mouseup(function(){
+				$(this).off('mousemove');
+			})
+			return false;
+			
+		})
+		var ov=$('#mymusic').get(0);
+		var control=true;
+		var timer=null;
+		$('.broadcast .iconfont').eq(1).click(function(ev){
+			if(control){
+				ov.play();
+				$(this).html('&#xe605;');
+				timer = setInterval(function(){
+					var currentT=ov.currentTime;
+					$('.time span').eq(0).html(changeTime(currentT));
+					var innerW=parseInt((ov.currentTime/ov.duration)*w);
+					$('.progress').css('width',innerW+'px');
+					
+					$('.lrc li').each(function(i,elem){
+						if($(elem).attr('time')==changeTime(ov.currentTime)){
+							$('.lrc li').removeClass('active');
+							var _index=$(elem).index();
+							$('.lrc li').eq(_index).addClass('active');
+							$('.lrc ul').animate({'margin-top':100-(_index*30)+'px'},500)
+						}
+					})
+				},1000)
+			$('.bar').addClass('active');
+			$('.circle').addClass('active');
+			}else{
+				ov.pause();
+				$(this).html('&#xe60c;')
+				clearInterval(timer);
+				$('.bar').removeClass('active');
+				$('.circle').removeClass('active');
+			}
+			control=!control;
+		})
+		var str='';
+		for(attr in gequ[0].lrc){
+			str+='<li time="'+attr+'">'+gequ[0].lrc[attr]+'</li>';
+		}
+		$('.lrc ul').html(str);
+		var num=0;
+
+		var h=$('.down').height();
+		$('.yuan').mousedown(function(ev){
+			console.log(41);
+			var rh=$('.top').height();
+			var cy=ev.clientY;
+			$(document).mousemove(function(ev){
+				var addH=ev.clientY-cy;
+				var newH=addH+rh;
+				if(newH<=0){
+					newH=0;
+				}if(newH>=h){
+					newH=h;
+				}
+				$('.top').css('height',newH+'px');
+				
+				
+			})
+				
+			$(document).mouseup(function(){
+				$(this).off('mousemove');
+			})
+			return false;
+			
+		})
+		
+		function changeTime(d){
+			var m= double(Math.floor(d/60));
+			var s= double(Math.floor(d%60));
+			return m+':'+s;
+		}
+		
+		function double(n){
+			return n<10 ? n='0'+n :n;
+		}
+		
+	</script>
+</html>

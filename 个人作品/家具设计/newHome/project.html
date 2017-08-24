@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>案例展示-EACH 定制家居</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="../css/soft-store.css" />
+		<link rel="stylesheet" type="text/css" href="../css/introduction.css"/>
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        
+		<script>
+			$(function() {
+				// 初始化轮播
+				$("#myCarousel").carousel('cycle');
+			});
+			$(function() {
+				$(".box").hover(
+					function() {
+						$(this).find(".dask").stop().delay(50).animate({
+							"top": 0,
+							opacity: 0.5
+						}, 500)
+					},
+					function() {
+						$(this).find(".dask").stop().animate({
+							"top": -426,
+							opacity: 0
+						}, 500)
+					}
+			
+				)
+			});
+			$(function() {
+				$(".banner-box").hover(
+					function() {
+						$(this).find(".banner-dask").stop().delay(50).animate({
+							"top": 0,
+							opacity: 0.5
+						}, 500)
+					},
+					function() {
+						$(this).find(".banner-dask").stop().animate({
+							"top": -600,
+							opacity: 0
+						}, 500)
+					}
+			
+				)
+			});
+	</script>
+	</head>
+
+	<body>
+            <div class="header">
+			<nav class="navbar" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<img src="../img/logo.png" />
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+							<li >
+								<a href="/">
+									<i>首页</i>
+									<em>HOME PAGE</em>
+								</a>
+							</li>
+							<li >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>关于我们</i>
+									<em>ABOUT US</em>
+								</a>
+								<ul class="dropdown-menu">
+						            <li>
+										<a href="/about/brand">
+											<i>品牌文化</i>
+											<em>BRAND</em>
+										</a>
+									</li> 
+									<li>
+										<a href="/about/introduction">
+											<i>设计师</i>
+											<em>DESIGNER</em>
+										</a>
+									</li>
+				                </ul>
+							</li>
+							<li >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>家具店</i>
+									<em>FURNITURE</em>
+								</a>
+								<ul class="dropdown-menu"> 
+									<li>
+										<a href="/furniture/styleShow">
+											<i>风格分类</i>
+											<em>STYLE</em>
+										</a>
+									</li> 
+									<li>
+										<a href="/furniture/styleType">
+											<i>空间分类</i>
+											<em>SPACE</em>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li  class="active" >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>“焕”新家</i>
+									<em>NEW HOME</em>
+								</a>
+								<ul class="dropdown-menu"> 
+									<li>
+										<a href="/newHome/appoint">
+											<i>客户预约</i>
+											<em>ORDER</em>
+										</a>
+									</li> 
+									<li>
+										<a href="/newHome/enroll">
+											<i>活动报名</i>
+											<em>ENTRY</em>
+										</a>
+									</li>
+									<li>
+										<a href="/newHome/project">
+											<i>案例展示</i>
+											<em>CASE</em>
+										</a>
+									</li>
+									<li>
+										<a href="/newHome/video">
+											<i>活动视频</i>
+											<em>VIDEO</em>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li >
+								<a href="/softStore">
+									<i>软配铺子</i>
+									<em>SOFT STORE</em>
+								</a>
+							</li>
+							<li >
+								<a href="/feedback">
+									<i>客户反馈</i>
+									<em>FEEDBACK</em>
+								</a>
+							</li>	
+					</ul>
+				</div>
+			</nav>
+		</div>		<div class="container-fluid back">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+                                                                        					<div class="item  active  banner-box">
+						<img src="img/anni01.jpg" alt="First slide">
+						<div class="banner-dask">
+							<h6>两居变一居，空间就是要浪费在美好的事情上！</h6>
+							<span></span>
+							<p>寸土寸金的魔都，Each工作室接到的好多翻新要求都是一变二，增加一个次卧或是休息区。可是一个月前，有
+这样一个姑娘找到了我们，希望我们能够帮她把两居变一居，做出一个工作区来！这么有趣大胆的尝试，就在
+上周，气质清新二手房翻新终于完工了！女主人还没收拾好，小诗就已经迫不及待的拍了照片，工作室不要太
+美好不好！好了，不吊大家胃口了，来看前方记者小诗发来的报道！</p>
+						</div>
+					</div>
+                                    					<div class="item  banner-box">
+						<img src="img/anni01.jpg" alt="First slide">
+						<div class="banner-dask">
+							<h6>两居变一居，空间就是要浪费在美好的事情上！</h6>
+							<span></span>
+							<p>寸土寸金的魔都，Each工作室接到的好多翻新要求都是一变二，增加一个次卧或是休息区。可是一个月前，有
+这样一个姑娘找到了我们，希望我们能够帮她把两居变一居，做出一个工作区来！这么有趣大胆的尝试，就在
+上周，气质清新二手房翻新终于完工了！女主人还没收拾好，小诗就已经迫不及待的拍了照片，工作室不要太
+美好不好！好了，不吊大家胃口了，来看前方记者小诗发来的报道！</p>
+						</div>
+					</div>
+                                    					<div class="item  banner-box">
+						<img src="img/anni01.jpg" alt="First slide">
+						<div class="banner-dask">
+							<h6>两居变一居，空间就是要浪费在美好的事情上！</h6>
+							<span></span>
+							<p>寸土寸金的魔都，Each工作室接到的好多翻新要求都是一变二，增加一个次卧或是休息区。可是一个月前，有
+这样一个姑娘找到了我们，希望我们能够帮她把两居变一居，做出一个工作区来！这么有趣大胆的尝试，就在
+上周，气质清新二手房翻新终于完工了！女主人还没收拾好，小诗就已经迫不及待的拍了照片，工作室不要太
+美好不好！好了，不吊大家胃口了，来看前方记者小诗发来的报道！</p>
+						</div>
+					</div>
+                                                                        <!--					<div class="item  banner-box">
+						<img src="/static/img/index/banner2.jpg" alt="Second slide">
+						<div class="banner-dask">
+							<h6>两居变一居，空间就是要浪费在美好的事情上！</h6>
+							<span></span>
+							<p>寸土寸金的魔都，Each工作室接到的好多翻新要求都是一变二，增加一个次卧或是休息区。可是一个月前，有
+这样一个姑娘找到了我们，希望我们能够帮她把两居变一居，做出一个工作区来！这么有趣大胆的尝试，就在
+上周，气质清新二手房翻新终于完工了！女主人还没收拾好，小诗就已经迫不及待的拍了照片，工作室不要太
+美好不好！好了，不吊大家胃口了，来看前方记者小诗发来的报道！</p>
+						</div>
+					</div>
+					<div class="item  banner-box">
+						<img src="/static/img/index/banner2.jpg" alt="Third slide">
+						<div class="banner-dask">
+							<h6>两居变一居，空间就是要浪费在美好的事情上！</h6>
+							<span></span>
+							<p>寸土寸金的魔都，Each工作室接到的好多翻新要求都是一变二，增加一个次卧或是休息区。可是一个月前，有
+这样一个姑娘找到了我们，希望我们能够帮她把两居变一居，做出一个工作区来！这么有趣大胆的尝试，就在
+上周，气质清新二手房翻新终于完工了！女主人还没收拾好，小诗就已经迫不及待的拍了照片，工作室不要太
+美好不好！好了，不吊大家胃口了，来看前方记者小诗发来的报道！</p>
+						</div>
+					</div>-->
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel" 
+				   data-slide="prev"><img src="../furniture/img/left-icon.png" /></a>
+				<a class="carousel-control right" href="#myCarousel" 
+				   data-slide="next"><img src="../furniture/img/right-icon.png" /></a>
+			</div>
+			<div class="case-content">             
+				<div class="row">
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<div class="box">
+							<img src="img/anni02.jpg"/>
+							<div class="dask">
+								<h5>北欧风格案例<span>北欧</span></h5>
+								<span></span>
+								<p>  &nbsp;&nbsp;北欧人强调简单结构与舒适功能的完美结合，即便是设计一把椅子，不仅要追求它的造型美，更注重从人体结构出发，讲究它的曲线如何与人体接触时完美地吻合在一起，使其与人体协调，倍感舒适。松木家具的大量使用满足了人们既想亲近自然，又要注重环保的最新需要。</p>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<div class="box">
+							<img src="img/anni03.jpg"/>
+							<div class="dask">
+								<h5>新中式风格案例<span>新中式</span></h5>
+								<span></span>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;新中式风格在设计上延续了明清时期家居配饰理念，提炼了其中经典元素并加以简化和丰富，在家具形态上更加简洁清秀，同时又打破了传统中式空间布局中等级、尊卑等文化思想，空间配色上也更为轻松自然。</p>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<div class="box">
+							<img src="img/anni04.jpg"/>
+							<div class="dask">
+								<h5>美式家居风格<span>美式</span></h5>
+								<span></span>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp; 美式家具呈现了非常鲜明的特点：大气、雍容、华贵、富丽，这可能就和美利坚民族本身民族自豪感造就而成的吧！所以无论是美式古典家具还是美式田园家具都有一种雍容的华丽。</p>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<div class="box">
+							<img src="img/anni05.jpg"/>
+							<div class="dask">
+								<h5>日式风格家居<span>日式</span></h5>
+								<span></span>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;日式室内设计中色彩多偏重于原木色，以及竹、藤、麻和其他天然材料颜色，形成朴素的自然风格。日式设计风格直接受日本和式建筑影响，讲究空间的流动与分隔，流动则为一室，分隔则分几个功能空间，空间中总能让人静静地思考，禅意无穷。</p>
+							</div>
+						</div>
+					</div>
+									</div>               
+				<span></span>
+			</div>
+						<div class="ba-color">
+				<div class="footer">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-7 col-lg-8 col-xl-9 footer-left">
+							<img src="../furniture/img/logo-footer.png" />
+							<ul>
+								<li><a href="/newHome/enroll">活动报名</a></li>
+								<li>|</li>
+								<li><a href="/newHome/appoint">需求预约</a></li>
+							</ul>
+							<p>上海旋木家居设计有限公司.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 footer-right">
+							<p>电话：<span>021-52665912</span></p>
+							<p>邮箱：客服部   eachstudio@sina.com</p>
+							<p>　　　市场部   eachstudio@163.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

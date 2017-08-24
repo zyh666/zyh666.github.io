@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>设计师简介-EACH 定制家居</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="../css/soft-store.css" />
+		<link rel="stylesheet" href="../css/introduction.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				// 初始化轮播
+				$("#myCarousel").carousel('cycle');
+			});
+			window.onload = function() {
+				var intro = document.getElementById("intro");
+				var str = intro.innerText;
+				var arr = str.split('');
+				intro.innerHTML='';
+				for (var i=0;i<str.length;i++) {
+					intro.innerHTML+=arr[i];
+					if (i==9) {
+						intro.innerHTML+='<br/>';
+					}else if (i==40) {
+						intro.innerHTML+='<br/>';
+					} else if (i==77) {
+						intro.innerHTML+='<br/>';
+					} else if (i==98) {
+						intro.innerHTML+='<br/>';
+					} else if (i==119) {
+						intro.innerHTML+='<br/>';
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<nav class="navbar" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<img src="../img/logo.png" />
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+							<li >
+								<a href="index.html">
+									<i>首页</i>
+									<em>HOME PAGE</em>
+								</a>
+							</li>
+							<li  class="active" >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>关于我们</i>
+									<em>ABOUT US</em>
+								</a>
+								<ul class="dropdown-menu">
+						            <li>
+										<a href="brand.html">
+											<i>品牌文化</i>
+											<em>BRAND</em>
+										</a>
+									</li> 
+									<li>
+										<a href="designer.html">
+											<i>设计师</i>
+											<em>DESIGNER</em>
+										</a>
+									</li>
+				                </ul>
+							</li>
+							<li >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>家具店</i>
+									<em>FURNITURE</em>
+								</a>
+								<ul class="dropdown-menu"> 
+									<li>
+										<a href="/furniture/styleShow">
+											<i>风格分类</i>
+											<em>STYLE</em>
+										</a>
+									</li> 
+									<li>
+										<a href="/furniture/styleType">
+											<i>空间分类</i>
+											<em>SPACE</em>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>“焕”新家</i>
+									<em>NEW HOME</em>
+								</a>
+								<ul class="dropdown-menu"> 
+									<li>
+										<a href="/newHome/appoint">
+											<i>客户预约</i>
+											<em>ORDER</em>
+										</a>
+									</li> 
+									<li>
+										<a href="/newHome/enroll">
+											<i>活动报名</i>
+											<em>ENTRY</em>
+										</a>
+									</li>
+									<li>
+										<a href="/newHome/project">
+											<i>案例展示</i>
+											<em>CASE</em>
+										</a>
+									</li>
+									<li>
+										<a href="/newHome/video">
+											<i>活动视频</i>
+											<em>VIDEO</em>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li >
+								<a href="/softStore">
+									<i>软配铺子</i>
+									<em>SOFT STORE</em>
+								</a>
+							</li>
+							<li >
+								<a href="/feedback">
+									<i>客户反馈</i>
+									<em>FEEDBACK</em>
+								</a>
+							</li>	
+					</ul>
+				</div>
+			</nav>
+		</div>		
+		<div class="container-fluid back">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item  active ">
+						<img src="brand/img/gmylb.jpg" alt="First slide">
+					</div>
+					<div class="item ">
+						<img src="brand/img/gmylb.jpg" alt="First slide">
+					</div>
+					<div class="item ">
+						<img src="brand/img/gmylb.jpg" alt="First slide">
+					</div>
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel" 
+				   data-slide="prev"><img src="brand/img/left-icon.png" /></a>
+				<a class="carousel-control right" href="#myCarousel" 
+				   data-slide="next"><img src="brand/img/right-icon.png" /></a>
+			</div>
+			<div class="photo-content intro-ba">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+						<div class="photo">
+							<img src="brand/img/designer1.jpg" />
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+						<div class="introduction">
+							<div class="title">
+								<h3>设计师</h3>
+							</div>	
+							<h4>肖诗流</h4>
+							<span></span>
+							<p id="intro">作品风格：简单不单调大方不代表缺乏细腻，利用个性化化的色彩，勇于与众不同。鲜艳造型、特殊前卫均可以成为空间内的最佳主角。平淡、直板、普通、守旧也可以成为衬托的序幕。一切宛如在白色的画布尽情创意挥洒，对比出明亮动人的空间层次。给所有有想法的人和勇于尝试的家居主人定制你想要的生活。我们定制的不是家居，是生活。</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+						<div class="photo">
+							<img src="brand/img/designer2.png" />
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+						<div class="introduction">
+							<div class="title">
+								<h3>设计师</h3>
+							</div>	
+							<h4>王谢婉婷</h4>
+							<span></span>
+							<p id="intro">作品风格：住所常被喻作人生的港湾，是解放身心的场所，切合生活实际的设计能营造舒适的私人空间。根据不同的设计风格具体对待，整体应和谐统一，这就是家的感觉。华丽但不炫耀--我们都是和自己赛跑的人，为了未来拼命努力，追求一种意义非凡的生命</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ba-color">
+				<div class="footer">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-7 col-lg-8 col-xl-9 footer-left">
+							<img src="brand/img/logo-footer.png" />
+							<ul>
+								<li><a href="/newHome/enroll">活动报名</a></li>
+								<li>|</li>
+								<li><a href="/newHome/appoint">需求预约</a></li>
+							</ul>
+							<p>上海旋木家居设计有限公司.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 footer-right">
+							<p>电话：<span>021-52665912</span></p>
+							<p>邮箱：客服部   eachstudio@sina.com</p>
+							<p>　　　市场部   eachstudio@163.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

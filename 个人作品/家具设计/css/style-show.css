@@ -1,0 +1,9 @@
+.left-nav ul li{
+	width: 25%;
+}
+.right-nav ul li{
+	width: 6%;
+}
+#topList li:hover{
+    cursor: pointer;
+}

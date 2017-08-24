@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>风格分类展示-EACH 定制家居</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="../css/soft-store.css" />
+		<link rel="stylesheet" href="../css/style-show.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="../js/layer.js"></script>
+		<script>
+			$(function() {
+				// 初始化轮播
+				$("#myCarousel").carousel('cycle');
+			});
+		</script>
+	</head>
+
+	<body>
+            <div class="header">
+			<nav class="navbar" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<img src="../img/logo.png" />
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+							<li >
+								<a href="http://www.eachwood.com">
+									<i>首页</i>
+									<em>HOME PAGE</em>
+								</a>
+							</li>
+							<li >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>关于我们</i>
+									<em>ABOUT US</em>
+								</a>
+								<ul class="dropdown-menu">
+						            <li>
+										<a href="/about/brand">
+											<i>品牌文化</i>
+											<em>BRAND</em>
+										</a>
+									</li> 
+									<li>
+										<a href="/about/introduction">
+											<i>设计师</i>
+											<em>DESIGNER</em>
+										</a>
+									</li>
+				                </ul>
+							</li>
+							<li  class="active" >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>家具店</i>
+									<em>FURNITURE</em>
+								</a>
+								<ul class="dropdown-menu"> 
+									<li>
+										<a href="http://www.eachwood.com/furniture/styleShow">
+											<i>风格分类</i>
+											<em>STYLE</em>
+										</a>
+									</li> 
+									<li>
+										<a href="http://www.eachwood.com/furniture/styleType">
+											<i>空间分类</i>
+											<em>SPACE</em>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li >
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<i>“焕”新家</i>
+									<em>NEW HOME</em>
+								</a>
+								<ul class="dropdown-menu"> 
+									<li>
+										<a href="/newHome/appoint">
+											<i>客户预约</i>
+											<em>ORDER</em>
+										</a>
+									</li> 
+									<li>
+										<a href="/newHome/enroll">
+											<i>活动报名</i>
+											<em>ENTRY</em>
+										</a>
+									</li>
+									<li>
+										<a href="/newHome/project">
+											<i>案例展示</i>
+											<em>CASE</em>
+										</a>
+									</li>
+									<li>
+										<a href="/newHome/video">
+											<i>活动视频</i>
+											<em>VIDEO</em>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li >
+								<a href="/softStore">
+									<i>软配铺子</i>
+									<em>SOFT STORE</em>
+								</a>
+							</li>
+							<li >
+								<a href="/feedback">
+									<i>客户反馈</i>
+									<em>FEEDBACK</em>
+								</a>
+							</li>	
+					</ul>
+				</div>
+			</nav>
+		</div>		<div class="container-fluid back">
+			<div class="classify">
+				<div class="left-nav">
+                                    <ul id="topList">
+                                                                                        <li data-p="4" onclick="lcHref(this)"  class="active" >北欧<span></span></li>
+                                                                                        <li data-p="5" onclick="lcHref(this)" >美式<span></span></li>
+                                                                                        <li data-p="6" onclick="lcHref(this)" >日式<span></span></li>
+                                                                                        <li data-p="7" onclick="lcHref(this)" >新中式<span></span></li>
+                                                                                </ul>
+                                    <input type="hidden" value="4" id="topListId"/>
+				</div>
+				<div class="right-nav">
+					<span></span>
+					<ul id="sType">
+                                            						<li data-p="12" >床<span></span></li>
+                                            						<li data-p="13" >床头柜<span></span></li>
+                                            						<li data-p="14" >餐桌<span></span></li>
+                                            						<li data-p="15" >餐边柜<span></span></li>
+                                            						<li data-p="16" >茶几<span></span></li>
+                                            						<li data-p="17" >电视柜<span></span></li>
+                                            						<li data-p="18" >斗柜<span></span></li>
+                                            						<li data-p="19" >沙发<span></span></li>
+                                            						<li data-p="20" >书柜<span></span></li>
+                                            						<li data-p="21" >书桌<span></span></li>
+                                            						<li data-p="22" >鞋柜<span></span></li>
+                                            						<li data-p="23" >衣柜<span></span></li>
+                                            						<li data-p="24" >椅子<span></span></li>
+                                            						<li data-p="86" >梳妆台<span></span></li>
+                                            						<li data-p="89" >榻榻米<span></span></li>
+                                            						<li data-p="90" >边几<span></span></li>
+                                            					</ul>
+				</div>
+			</div>
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+                                    					<div class="item  active ">
+						<img src="img/style01.jpg" alt="First slide">
+					</div>
+                                    					<div class="item ">
+						<img src="img/style02.jpg" alt="First slide">
+					</div>
+                                    					<div class="item ">
+						<img src="img/style03.jpg" alt="First slide">
+					</div>
+                                    				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel" 
+				   data-slide="prev"><img src="img/left-icon.png" /></a>
+				<a class="carousel-control right" href="#myCarousel" 
+				   data-slide="next"><img src="img/right-icon.png" /></a>
+			</div>
+			<div class="style-content">
+				<div class="row">
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-65"'>
+						<img src="img/style03.jpg" />
+						<h4>梳妆台02</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-64"'>
+						<img src="img/style04.jpg" />
+						<h4>梳妆台01</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-63"'>
+						<img src="img/style05.jpg" />
+						<h4>电视柜02</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-62"'>
+						<img src="img/style06.jpg" />
+						<h4>茶几03</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-61"'>
+						<img src="img/style07.jpg" />
+						<h4>床头柜02</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-60"'>
+						<img src="img/style08.jpg" />
+						<h4>床头柜03</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-59"'>
+						<img src="img/style09.jpg" />
+						<h4>茶几02</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-58"'>
+						<img src="img/style10.jpg" />
+						<h4>电视柜01</h4>
+					</div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 high" onclick='javascript:location.href="/furniture/detail-id-57"'>
+						<img src="img/style11.jpg" />
+						<h4>茶几01</h4>
+					</div>
+                                    				</div>
+				<span></span>
+			</div>
+                        <div class="navi">
+                            <span class="active current">1</span> <a class="pages" href="http://www.eachwood.com/furniture/styleShow-page-2.html">2</a> <a class="nextPage" href="http://www.eachwood.com/furniture/styleShow-page-2.html">下一页</a><a class="lastPage" href="http://www.eachwood.com/furniture/styleShow-page-2.html">尾页</a>共12条                        </div>
+						<div class="ba-color">
+				<div class="footer">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-7 col-lg-8 col-xl-9 footer-left">
+							<img src="img/logo-footer.png" />
+							<ul>
+								<li><a href="/newHome/enroll">活动报名</a></li>
+								<li>|</li>
+								<li><a href="/newHome/appoint">需求预约</a></li>
+							</ul>
+							<p>上海旋木家居设计有限公司.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 footer-right">
+							<p>电话：<span>021-52665912</span></p>
+							<p>邮箱：客服部   eachstudio@sina.com</p>
+							<p>　　　市场部   eachstudio@163.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script>
+    function  locHref(){
+        var sType = $('#sType li');
+        var topListId = $('#topListId').val();
+        sType.each(function(){
+            $(this).click(function(){
+                var id = $(this).attr('data-p');
+                if(id){
+                    location.href="/furniture/styleShow?f="+topListId+"&s="+id;
+                }
+            });
+        })
+    }
+    locHref();
+    function  lcHref(obj){
+        var id = $(obj).attr('data-p');
+        location.href="/furniture/styleShow?f="+id;
+    }
+
+</script>

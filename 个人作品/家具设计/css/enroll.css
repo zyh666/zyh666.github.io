@@ -1,0 +1,142 @@
+.enroll-back{
+	background: url(../newHome/img/enroll-ba.jpg) no-repeat;
+}
+.enroll-content{
+	width: 1200px;
+	height: 6.6rem;
+	margin: 1.5rem auto;
+	background: url(../newHome/img/enroll-content.jpg);
+}
+.feedback-content{
+	width: 934px;
+	height: 6.6rem;
+	margin: 1.5rem auto;
+	background: #fff;
+}
+.enroll-content .row{
+	margin: 0;
+}
+.enroll-title{
+	width: 100%;
+	margin-top: 1.15rem;
+}
+.enroll-title h2{
+	margin-top: 0;
+	/*margin-left: 19.2%;*/
+	font-family: "张海山";
+	font-size: 0.3rem;
+	color: #363636;
+	text-align: center;
+}
+.enroll-title span{
+	background: url(../newHome/img/icon10.png) no-repeat;
+	display: block;
+	width: 77.5%;
+	height: 0.1rem;
+	margin: 0.3rem auto;
+}
+.enroll-left{
+	width: 70%;
+	float: right;
+}
+.enroll-left img{
+	width: 90%;
+	height: 2.43rem;
+}
+.enroll-left h3{
+	font-family: "张海山";
+	font-size: 0.28rem;
+	color: #363636;
+	margin-left: 0.22rem;
+	width: 80%;
+	height: 31px;
+	overflow: hidden;
+}
+.enroll-left p{
+	font-family: "张海山";
+	font-size: 0.16rem;
+	color: #848483;
+	margin-left: 0.22rem;
+	width: 91%;
+	overflow: hidden;
+	word-break: break-all;
+}
+.enroll-content .enroll-right{
+	width: 70%;
+	float: left;
+	margin-left: 0.5rem;
+}
+.feedback-content .enroll-right{
+	width: 60%;
+	margin: 0 auto;
+}
+.enroll-right label{
+	font-family: "张海山";
+	font-size: 0.18rem;
+	color: #6c6c6c;
+	font-weight: normal;
+}
+.enroll-right input{
+	width: 2.2rem;
+	height: 0.36rem;
+    margin-top: 0.22rem;
+    margin-left: 0.3rem;
+    font-family: "张海山";
+    font-size: 0.18rem;
+    color: #6c6c6c;
+    background-color: #f8f9fb;
+    border: 1px solid #f8f9fb;
+}
+.enroll-right label:first-child input{
+	margin-top: 0.52rem;
+}
+.enroll-right button{
+	width: 1rem;
+	height: 0.34rem;
+	font-family: "张海山";
+    font-size: 0.2rem;
+    color: #4a4a4a;
+    background-color: #f8f9fb;
+    border: 1px solid #9e9c9c;
+    border-radius: 3px;
+    font-weight: normal;
+    margin-left: 0.6rem;
+}
+.enroll-content .enroll-right button{
+	margin-top: 0.65rem;
+}
+.feedback-content .enroll-right button{
+	margin-top: 0.65rem;
+}
+.enroll-right textarea{
+	width: 2.2rem;
+	height: 0.7rem;
+    margin-top: 0.22rem;
+    margin-left: 0.3rem;
+    font-family: "张海山";
+    font-size: 0.18rem;
+    color: #6c6c6c;
+    background-color: #f8f9fb;
+    border: 1px solid #f8f9fb;
+    resize: none;
+}
+.enroll-right span{
+	background: url(../newHome/img/rarr.png) no-repeat;
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.1rem;
+	margin-top: 1rem;
+}
+@media only screen and (max-width: 1800px) {
+	.feedback-content .enroll-right{
+		width: 80%;
+	}
+}
+@media only screen and (max-width:1200px) {
+	.enroll-left{
+		float: none;
+	}
+	.enroll-right{
+		float: none;
+	}
+}
