@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<style type="text/css">
+		body{
+			font-family: "微软雅黑";
+		}
+		/*网页顶部导航*/
+		a{
+			color: gray;
+		}
+		.navbar{
+			min-height: 65px;
+		}
+		.navbar-inner{
+			height: 40px;
+			background: white;
+			
+		}
+		.top{
+			height: 40px;
+			line-height: 40px;
+		}
+		.top .brand{
+			font-size: 20px;
+			padding: 0 20px 0;
+			line-height: 40px;
+			font-weight: 200;
+			color: #777777;
+			float: left;
+			display: block;
+			margin: auto;
+		}
+		.divider-vertical{
+			height: 40px;
+			margin: 0 9px;
+			border-right: 1px solid #FFFFFF;
+			border-left: 1px solid #F9F2F4;
+		}
+		.nav li{
+			float: left;
+		}
+		.nav>li>a{
+			padding: 0 15px;
+		}
+		.nav .pull-right{
+			float: right;
+		}
+		/*第二个模块*/
+		.parallax{
+			width: 100%;
+			height: 826px;
+			background: url(img/leyuwang/promo-bg.jpg) no-repeat;
+			background-size: 100% 100%;
+			z-index: -1;
+			position: relative;
+			padding-top: 280px;
+		}
+		.img-text{
+			height: 268px;
+			color: white;
+			
+		}
+		.container h1{
+			font-size: 72px;
+			font-weight: 100;
+			line-height: 1.5em;
+		}
+		@media only screen and (min-width: 100px) and (max-width: 760px) {
+			.container h1{
+				font-size: 37px;
+				font-weight: 100;
+				line-height: 1.5em;
+			}
+		}
+		#video-start img{
+			min-width: 30px;
+			height: 30px;
+			margin-right: 20px;
+		}
+		/*人才来源模块*/
+		.section-block{
+			padding: 77px 20px;
+			width: 100%;
+			/*min-height: 592px;*/
+		}
+		.section-block .container{
+			/*min-height: 420px;*/
+			text-align: center;
+			color: #434a54;
+		}
+		.section-block .container h2{
+			font-size: 30px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			
+		}
+		.section-block .container p{
+			color: #aab2bd;
+		}
+		/*快速到班*/
+		.decorate-line{
+		    margin: 40px auto;
+		    width: 5pc;
+		    height: 5px;
+		    background-color: #aab2bd;
+		    margin-bottom: 50px;
+		}
+		.partner{
+			width: 100%;
+			margin-left: 14px;
+			margin-right: 14px;
+		}
+		.partner .logo{
+			margin-bottom: 30px;
+			height: 36px;
+			-webkit-filter: grayscale(100%);
+		}
+		@media(min-width: 992px) {
+			.partner .logo{
+				margin-right: 36px;
+			}
+		}
+		.btn-group-lg>.btn, .btn-lg{
+			padding: 5px 10px;
+			font-size: 14px;
+			margin: 20px 10px 20px;
+		}
+		/*@media only screen and (min-width: 100px) and (max-width: 774px) {
+			.section-block{
+				height: 686px;
+			}
+		}*/
+		#underneath{
+			background: #F1F5F7;
+		}
+		@media only screen and (min-width: 100px) and (max-width: 774px) {
+			#underneath{
+				width: 100%;
+			}
+		}
+		/*@media only screen and (min-width: 100px) and (max-width: 774px) {
+			#underneath{
+				height: 800px;
+			}
+		}
+		*/
+		@media(min-width: 768px) {
+			.grid-intro .tw{
+				width: 300px;
+				
+			}
+			.grid-intro .row{
+				width: 615px;
+				margin: auto;
+			}
+		}
+		/*担保交易*/
+		.fwb-step-txt .text{
+			height: 92px;
+		}
+		.fwb-step-txt .text .first{
+			margin-left: 220px;
+		}
+		.fwb-step-txt .text li{
+			width: 135px;
+			height: 92px;
+			color: #333;
+			float: left;
+			margin-left: 87px;
+		}
+		.fwb-step-txt .text li h4{
+			font-size: 16px;
+			font-weight: 700;
+			text-align: center;
+			line-height: 1.4px;
+		}
+		.fwb-step-txt .text li p{
+			margin-top: 20px;
+			font-size: 12px;
+			line-height: 16px;
+		}
+		
+		@media only screen and (min-width: 100px) and (max-width: 1059px) {
+			.fwb-pay-step img{
+				width: 100%;
+			}
+		}
+		@media only screen and (min-width: 100px) and (max-width: 774px) {
+			#customer{
+				padding-bottom: 10px;
+				background: white;
+			}
+			#customer .grid{
+				display: none;
+				
+			}
+		}
+		/*兼职保障*/
+		.banner-bottom-grids p{
+			padding: 20px 0;
+		}
+		
+		.banner-bottom-grids{
+			
+			overflow: hidden;
+		}
+	</style>
+	<body>
+		<!--网页顶部导航-->
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container top">
+					<a href="http://www.leyu.net/" class="brand">乐鱼网</a>
+					<ul class="nav pull-left">
+						<li class="divider-vertical"></li>
+						<li class="dropdown"><a>技术兼职</a></li>
+						<li class="divider-vertical"></li>
+						<li class="dropdown"><a>招聘需求</a></li>
+						<li class="divider-vertical"></li>
+					</ul>
+					<ul class="nav pull-right">
+						<li class="dropdown"><a>登陆</a></li>
+						<li class="dropdown"><a>注册</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--第二个模块-->
+		<div class="parallax">
+			<div class="container img-text">
+				<h1 class="sourehan text-center animated fadeInDown">预约互联网坐班兼职工程师</h1>
+				<h3 class="text-center animated fadeInDown">
+					<span id="video-start">
+						<img src="http://www.leyu.net/file/yi/images/play.svg"/>
+						预约知名互联网公司的产品、美工、前端、后端等技术人员到您的团队坐班兼职.
+					</span>
+				</h3>
+			</div>
+		</div>
+		<!--人才来源模块-->
+		<div class="section-block">
+			<div class="container">
+				<h2>人才来源</h2>
+				<p class="text-muted">乐鱼网兼职技术人员来自各大互联网公司，普遍具有多年工作经验，平台严格把控人才入口，确保工作质量和效率。</p>
+				<div class="decorate-line"></div>
+				<div class="partner row">
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_baidu.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_alibaba.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_tengxun.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_wangyi.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_jingdong.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_sina.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_360.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_souhu.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_xiaomi.jpg"/>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 logo">
+						<img src="img/leyuwang/i_suning.jpg"/>
+					</div>
+				</div>
+				<a class="btn btn-lg btn-primary btn-custom-primary">浏览技术人才</a>
+				<a class="btn btn-lg btn-primary btn-custom-primary btn-success">发布招聘需求</a>
+			</div>
+		</div>
+		<!--快速到班-->
+		<div class="section-block" id="underneath">
+			<div class="container">
+				<h2>快速到班</h2>
+				<p class="text-muted">简化预约流程，为有需求的团队节省预约时间，极大限度的满足快速到班的需求，兼职时间灵活，双方可自由约定。</p>
+				<div class="decorate-line"></div>
+				<div class="grid-intro">
+					<div class="row">
+						<div class="col-sm-6 tw">
+							<img src="img/leyuwang/kuaisu.png"/>
+							<p>急速沟通</p>
+						</div>
+						<div class="col-sm-6 tw">
+							<img src="img/leyuwang/kuaisu2.png"/>
+							<p>公司坐班</p>
+						</div>
+					</div>
+					<a class="btn btn-primary btn-lg btn-custom-primary">发送招聘需求</a>
+				</div>
+			</div>
+		</div>
+		<!--担保交易-->
+		<div class="section-block" id="customer">
+			<div class="container">
+				<h2>担保交易</h2>
+				<p class="text-muted">薪酬先支付到乐鱼网，确认完工后，再支付给人才。按需支付，未工作时间无忧退款。如发生纠纷，乐鱼网介入调查仲裁保证服务满意度。</p>
+				<div class="decorate-line"></div>
+				<div class="grid">
+					<div class="fwb-pay-step">
+						<img src="img/leyuwang/stepi.png"/>
+					</div>
+					<div class="fwb-step-txt">
+						<ul class="text">
+							<li class="first">
+								<h4>托管雇佣金</h4>
+								<p>先支付薪酬到乐鱼网,确认完工，满意后再付款</p>
+							</li>
+							<li>
+								<h4>签订合同</h4>
+								<p>官方提供第三方交易协议保障双方权益</p>
+							</li>
+							<li>
+								<h4>工作验收</h4>
+								<p>雇主对兼职工作进行验收</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--兼职保障-->
+		<div class="section-block" id="underneath">
+			<div class="container">
+				<h2>兼职保障</h2>
+				<p class="text-muted">兼职就选乐鱼网，交易有保障，乐鱼网为您解决交易六大难题，解决您的后顾之忧。</p>
+				<div class="decorate-line"></div>
+				<div class="banner-bottom-grids text-center">
+					<div class="col-md-4 banner-bottom-grid">
+						<img src="img/leyuwang/productivity.png"/>
+						<p>乐鱼网对需求严格筛选和沟通后再做推荐，保护个人隐私。双方签订兼职合同，技术兼职不必担心需求变化。</p>
+					</div>
+					<div class="col-md-4 banner-bottom-grid">
+						<img src="img/leyuwang/clarity.png"/>
+						<p>技术兼职直接和雇主沟通，充分了解所要兼职的内容，线上交易乐鱼网严格把控交易环节，保障兼职权益。 </p>
+					</div>
+					<div class="col-md-4 banner-bottom-grid">
+						<img src="img/leyuwang/peace2.png"/>
+						<p>乐鱼网担保交易，先支付后工作，保证劳动回报。坐班时间双方约定，弹性工作。</p>
+					</div>
+				</div>
+				<a class="btn btn-primary btn-lg btn-custom-primary text-center" >登记技术简历</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+</html>
